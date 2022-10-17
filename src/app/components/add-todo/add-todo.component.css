@@ -1,0 +1,24 @@
+.action {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+}
+.input {
+  border: none;
+  border-bottom: 3px solid rgb(1, 47, 87);
+  outline: none;
+  width: 88%;
+  padding: 0.9rem 1rem;
+  background: aliceblue;
+}
+.btn-add {
+  background-color: rgb(9, 71, 125);
+  color: #fff;
+  border: none;
+  border-bottom: 0.5rem solid rgb(1, 47, 87);
+  transition: 0.5s;
+}
+.btn-add:hover {
+  background-color: rgb(1, 47, 87);
+  border-bottom: 0.5rem solid rgb(1, 27, 49);
+}

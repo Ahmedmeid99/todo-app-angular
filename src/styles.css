@@ -12,8 +12,9 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .container {
-  width: 60rem;
+  max-width: 60rem;
   margin: auto;
+  padding: 0 2rem;
 }
 .flex {
   display: flex;
@@ -24,4 +25,18 @@ body {
   padding: 0.8rem 1.5rem;
   font-size: 1.4rem;
   cursor: pointer;
+}
+/*max-width: 700px */
+@media (max-width: 44em) {
+  /*font-size: 9px */
+  html {
+    font-size: 56.25%;
+  }
+}
+/*max-width: 500px */
+@media (max-width: 30em) {
+  html {
+    /*font-size: 8px */
+    font-size: 50%;
+  }
 }

@@ -18,10 +18,12 @@
   margin-right: 1rem;
 }
 .btn-delete {
-  border: 1px solid #f90000;
   background: #f90000;
+  border: none;
+  border-bottom: 0.5rem solid #850404;
   color: #fff;
 }
 .btn-delete:hover {
-  background: #9a0000;
+  background: #850404;
+  border-bottom: 0.5rem solid #460202;
 }

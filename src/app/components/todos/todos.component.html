@@ -1,4 +1,5 @@
+<app-add-todo (addTodoEvent)="addTodo($event)"></app-add-todo>
 <ul class="list" *ngFor="let todo of todos">
     <!-- todo component -->
-    <app-todo [todo]="todo"></app-todo>
+    <app-todo [todo]="todo" (toggleEvent)="toggleTodo($event)" (deleteEvent)="deleteTodo($event)"></app-todo>
 </ul>

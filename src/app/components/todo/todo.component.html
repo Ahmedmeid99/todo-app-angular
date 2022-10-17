@@ -1,7 +1,7 @@
-<li class="list-item flex" [ngClass]="{'todo-completed' : todo.completed}">
+<li class="list-item flex" [ngClass]="{'todo-completed' : todo.completed}" (click)="toggle(todo)">
     <div class="titl">
         <input [checked]="todo.completed" type="checkbox" class="input">
         {{todo.text}}
     </div>
-    <button class="btn btn-delete">delete</button>
+    <button class="btn btn-delete" (click)="delete(todo)">delete</button>
 </li>
