@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import Todo from 'src/app/Models/Todo';
 
 @Component({
   selector: 'app-add-todo',
@@ -15,11 +16,11 @@ export class AddTodoComponent implements OnInit {
   ngOnInit(): void {}
 
   addOne() {
-    const todo = {
-      id: Math.floor(Math.random() * 1000000),
-      text: this.inputText,
-      completed: false,
-    };
+    const todo = new Todo(
+      Math.floor(Math.random() * 1000000),
+      this.inputText,
+      false
+    );
     this.addTodoEvent.emit(todo);
     this.inputText = '';
   }

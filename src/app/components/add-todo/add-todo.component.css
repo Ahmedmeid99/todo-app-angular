@@ -8,7 +8,7 @@
   border-bottom: 3px solid rgb(1, 47, 87);
   outline: none;
   width: 88%;
-  padding: 0.9rem 1rem;
+  padding: 1.5rem 1rem;
   background: aliceblue;
 }
 .btn-add {
@@ -16,6 +16,7 @@
   color: #fff;
   border: none;
   border-bottom: 0.5rem solid rgb(1, 47, 87);
+  padding: 1.5rem;
   transition: 0.5s;
 }
 .btn-add:hover {
