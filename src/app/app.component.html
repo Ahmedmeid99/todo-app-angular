@@ -1,19 +1,25 @@
+<!-- navbar -->
 <div class="navbar">
-  <h3 class="nav-title">ToDo App</h3>
+  <nav class="nav">
+    <h3 class="nav-title">ToDo App</h3>
+    <div class="open-icon" (click)="openMenue()">
+      <div class="sub-icon"></div>
+      <div class="sub-icon"></div>
+      <div class="sub-icon"></div>
+    </div>
+  </nav>
+  <div class="menu" [ngClass]="{'open-menu':open}">
+    <!--  -->
+    <div class=" close">
+    <div class="close-icon" (click)="closeMenue()">x</div>
+  </div>
+  <div class="link">1</div>
+  <div class="link">2</div>
+  <div class="link">3</div>
+  <div class="link">4</div>
+  <div class="link">5</div>
 </div>
-<div class="container">
-
-  <!-- todo component -->
-  <app-todos></app-todos>
 </div>
-
-
-
-
-
-
-
-
 
 <!-- dont remove that -->
 <router-outlet></router-outlet>
